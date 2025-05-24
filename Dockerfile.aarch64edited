@@ -25,7 +25,7 @@ RUN \
     mkdir -p /app/radarr/bin && \
     curl -o \
     /tmp/radarr.tar.gz -L \
-    "https://github.com/kamdzy/Radarr/releases/download/v${RADARR_VERSION}/Radarr.${RADARR_BRANCH}.${RADARR_VERSION}.linux-musl-arm64.tar.gz" && \
+    "https://github.com/kamdzy/Radarr/releases/download/v${RADARR_VERSION}/Radarr.${RADARR_BRANCH}.${RADARR_VERSION}.linux-musl-x64.tar.gz" && \
     tar xzf \
     /tmp/radarr.tar.gz -C \
     /app/radarr/bin --strip-components=1 && \
