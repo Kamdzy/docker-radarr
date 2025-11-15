@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-FROM ghcr.io/linuxserver/baseimage-alpine:amd64-3.21
+FROM ghcr.io/linuxserver/baseimage-alpine:amd64-3.22
 
 # set version label
 ARG BUILD_DATE
@@ -20,7 +20,9 @@ RUN \
     apk add --no-cache \
     icu-libs \
     sqlite-libs \
-    xmlstarlet && \
+    xmlstarlet \
+    dotnet8-runtime \
+    aspnetcore8-runtime && \
     echo "**** install radarr ****" && \
     mkdir -p /app/radarr/bin && \
     curl -o \
