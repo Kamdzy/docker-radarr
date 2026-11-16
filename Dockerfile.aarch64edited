@@ -21,8 +21,8 @@ RUN \
     icu-libs \
     sqlite-libs \
     xmlstarlet \
-    dotnet8-runtime \
-    aspnetcore8-runtime && \
+    dotnet10-runtime \
+    aspnetcore10-runtime && \
     echo "**** install radarr ****" && \
     mkdir -p /app/radarr/bin && \
     curl -o \
